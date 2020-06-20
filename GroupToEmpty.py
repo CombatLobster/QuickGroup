@@ -59,7 +59,7 @@ class GroupAtCursor(bpy.types.Operator):
         locValue = bpy.context.scene.objects.data.cursor.location
 
         #Add empty at the location
-        bpy.ops.object.empty_add(type='PLAIN_AXES', align='WORLD', location=(locValue), scale=(1, 1, 1))
+        bpy.ops.object.empty_add(type='PLAIN_AXES', align='WORLD', location=(locValue))
 
 
         #Reselect ctrlObjects
